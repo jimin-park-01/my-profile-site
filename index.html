@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#ffffff" />
+  <meta name="description" content="Cloud Infra · Data Engineering · Portfolio. Specializing in Kafka, Spark, Iceberg, AWS architecture and data pipelines." />
+  <meta name="keywords" content="Data Engineering, Cloud Infrastructure, AWS, Kafka, Spark, Iceberg, Python" />
+  <meta name="author" content="Park Jimin" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Park Jimin | Cloud Infrastructure & Data Engineering" />
+  <meta property="og:description" content="Designing reliable data pipelines with Kafka, Spark, and Iceberg on AWS" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://jimin-park.dev" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75' fill='%231e293b'>📊</text></svg>" />
+
+  <title>Park Jimin | Cloud Infrastructure & Data Engineering</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    #about,
+    #projects,
+    #contact {
+      scroll-margin-top: 60px;
+    }
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav__inner">
+      <div class="nav__logo">Park Jimin</div>
+
+      <!-- Desktop Navigation -->
+      <div class="nav__desktop show">
+        <a class="nav__link" href="#about">About</a>
+        <a class="nav__link" href="#projects">Projects</a>
+        <a class="nav__link" href="#contact">Contact</a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button class="nav__toggle show" aria-label="Toggle menu">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+
+      <!-- Mobile Navigation -->
+      <div class="nav__mobile-menu">
+        <a class="nav__link" href="#about">About</a>
+        <a class="nav__link" href="#projects">Projects</a>
+        <a class="nav__link" href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <h1 class="hero__title">Park Jimin</h1>
+        <p class="hero__subtitle">Cloud Infrastructure · Data Engineering</p>
+        <p class="hero__description">클라우드와 데이터를 중심으로, 안정적인 시스템을 설계하고 구현합니다.</p>
+
+        <div class="hero__buttons">
+          <a href="#projects" class="button button--primary button--lg">Projects</a>
+          <a href="https://github.com/jimin-park-01" target="_blank" rel="noopener noreferrer" class="button button--secondary button--lg">GitHub</a>
+          <a href="portfolio.pdf" target="_blank" rel="noopener noreferrer" class="button button--secondary button--lg">Portfolio PDF</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section section--light">
+      <div class="section__container">
+        <div class="section-heading">
+          <h2 class="section-heading__title">About</h2>
+        </div>
+
+        <div class="about">
+          <div class="about__image-wrapper">
+            <div class="about__image">
+              <img src="profile.jpg" alt="Park Jimin" />
+            </div>
+          </div>
+
+          <div class="about__content">
+            <p class="about__intro">안녕하세요. Cloud와 Data 분야에 관심을 가지고 경험을 쌓아가고 있는 박지민입니다.</p>
+
+            <div class="about__paragraphs">
+              <p>다양한 IT 기술과 프로젝트를 경험하면서 관심 분야를 Cloud와 Data Engineering으로 구체화했습니다. 데이터가 수집·처리·저장되고 실제 활용으로 이어지는 전 과정에 관심을 갖게 되었고, 이를 안정적으로 운영할 수 있는 시스템 구축에 흥미를 느꼈습니다.</p>
+              <p>AWS 기반 클라우드 인프라 구축과 데이터 파이프라인 프로젝트를 수행하며 관련 경험을 쌓았습니다. 앞으로도 Cloud와 Data를 중심으로 기술 경험을 넓히면서, 안정적으로 데이터를 처리하고 활용할 수 있는 시스템에 대한 이해를 발전시키고자 합니다.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="about__footer">
+          <div class="about__grid">
+            <div>
+              <h4 class="about__category-label">Education</h4>
+              <div class="about__category">
+                <p class="about__category-name">한림대학교</p>
+                <p class="about__category-value">콘텐츠IT 전공 / 인공지능 복수전공</p>
+              </div>
+            </div>
+
+            <div>
+              <h4 class="about__category-label">Certifications</h4>
+              <div class="about__certifications">
+                <span class="badge badge--skill">ADsP</span>
+                <span class="badge badge--skill">SQLD</span>
+                <span class="badge badge--skill">리눅스마스터 2급</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section">
+      <div class="section__container">
+        <div class="section-heading">
+          <h2 class="section-heading__title">Skills</h2>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-card">
+            <h3 class="skill-card__title">Cloud & Infrastructure</h3>
+            <div class="skill-card__items skill-card__items--inline">
+              <span class="badge badge--skill">AWS<span class="skill-card__item-description"> EC2 · S3 · RDS · Lambda · IAM · VPC · Glue</span></span>
+              <span class="badge badge--skill">Linux</span>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <h3 class="skill-card__title">Data Engineering</h3>
+            <div class="skill-card__items">
+              <span class="badge badge--skill">Python</span>
+              <span class="badge badge--skill">Spark</span>
+              <span class="badge badge--skill">Kafka</span>
+              <span class="badge badge--skill">Airflow</span>
+              <span class="badge badge--skill">Iceberg</span>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <h3 class="skill-card__title">Database & Query</h3>
+            <div class="skill-card__items">
+              <span class="badge badge--skill">SQL</span>
+              <span class="badge badge--skill">MySQL</span>
+              <span class="badge badge--skill">Amazon Athena</span>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <h3 class="skill-card__title">Tools & Monitoring</h3>
+            <div class="skill-card__items">
+              <span class="badge badge--skill">Docker</span>
+              <span class="badge badge--skill">Git</span>
+              <span class="badge badge--skill">CloudWatch</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section section--light">
+      <div class="section__container">
+        <div class="section-heading">
+          <h2 class="section-heading__title">Key Projects</h2>
+        </div>
+
+        <div class="project-grid project-grid--key">
+          <!-- Project 1: Attribution Lakehouse -->
+          <div class="project-card project-card--key">
+            <div class="project-card__header">
+              <h3 class="project-card__title">광고 Attribution Lakehouse</h3>
+              <span class="badge badge--secondary" style="font-size: 0.75rem; flex-shrink: 0;">Personal</span>
+            </div>
+
+            <p class="project-card__description">Late Event를 반영하는 광고 데이터 파이프라인</p>
+
+            <div class="project-card__tech">
+              <span class="badge badge--skill">Kafka</span>
+              <span class="badge badge--skill">Spark</span>
+              <span class="badge badge--skill">Iceberg</span>
+            </div>
+
+            <div class="project-card__button-wrapper">
+              <a href="https://github.com/jimin-park-01/ad-attribution-platform" target="_blank" rel="noopener noreferrer" class="button button--secondary button--sm" style="width: 100%;">GitHub →</a>
+            </div>
+          </div>
+
+          <!-- Project 2: Agri Market Dashboard -->
+          <div class="project-card project-card--key">
+            <div class="project-card__header">
+              <h3 class="project-card__title">농산물 시장 종합 모니터링</h3>
+              <span class="badge badge--secondary" style="font-size: 0.75rem; flex-shrink: 0;">Team</span>
+            </div>
+
+            <p class="project-card__description">기상·경매 데이터를 통합한 농산물 모니터링 대시보드</p>
+
+            <div class="project-card__tech">
+              <span class="badge badge--skill">AWS Glue</span>
+              <span class="badge badge--skill">QuickSight</span>
+              <span class="badge badge--skill">Athena</span>
+            </div>
+
+            <div class="project-card__button-wrapper">
+              <a href="https://github.com/jimin-park-01/agricultural-market-monitoring-dashboard" target="_blank" rel="noopener noreferrer" class="button button--secondary button--sm" style="width: 100%;">GitHub →</a>
+            </div>
+          </div>
+
+          <!-- Project 3: AWS 3-Tier Infra -->
+          <div class="project-card project-card--key">
+            <div class="project-card__header">
+              <h3 class="project-card__title">AWS 3-Tier 인프라 구축</h3>
+              <span class="badge badge--secondary" style="font-size: 0.75rem; flex-shrink: 0;">Team</span>
+            </div>
+
+            <p class="project-card__description">고가용성을 고려한 AWS 3-Tier 인프라</p>
+
+            <div class="project-card__tech">
+              <span class="badge badge--skill">EC2</span>
+              <span class="badge badge--skill">RDS</span>
+              <span class="badge badge--skill">Auto Scaling</span>
+            </div>
+
+            <div class="project-card__button-wrapper">
+              <a href="https://github.com/jimin-park-01/aws-3tier-infrastructure" target="_blank" rel="noopener noreferrer" class="button button--secondary button--sm" style="width: 100%;">GitHub →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Additional Projects Section -->
+    <section class="section">
+      <div class="section__container">
+        <div class="section-heading">
+          <h2 class="section-heading__title">Additional Projects</h2>
+        </div>
+
+        <div class="project-grid project-grid--supporting">
+          <!-- Project 4: Data Integration -->
+          <div class="project-card project-card--small">
+            <div class="project-card__header">
+              <h3 class="project-card__title">지역별 소비·부동산 데이터 통합 구축</h3>
+              <span class="badge badge--secondary" style="font-size: 0.7rem; flex-shrink: 0;">Personal</span>
+            </div>
+
+            <p class="project-card__description">공공데이터 정규화 및 통합 분석 데이터셋 구축</p>
+
+            <div class="project-card__tech">
+              <span class="badge badge--skill">Python</span>
+              <span class="badge badge--skill">Pandas</span>
+            </div>
+
+            <div class="project-card__button-wrapper">
+              <a href="https://github.com/jimin-park-01/public-data-integration-analysis" target="_blank" rel="noopener noreferrer" class="button button--secondary button--sm" style="width: 100%;">GitHub →</a>
+            </div>
+          </div>
+
+          <!-- Project 5: Tour Recommendation -->
+          <div class="project-card project-card--small">
+            <div class="project-card__header">
+              <h3 class="project-card__title">수도권 뚜벅이 여행지 경로 추천</h3>
+              <span class="badge badge--secondary" style="font-size: 0.7rem; flex-shrink: 0;">Team</span>
+            </div>
+
+            <p class="project-card__description">지역 특성과 사용자 선호를 반영한 맞춤형 여행지 추천</p>
+
+            <div class="project-card__tech">
+              <span class="badge badge--skill">Python</span>
+              <span class="badge badge--skill">K-Means</span>
+            </div>
+
+            <div class="project-card__button-wrapper">
+              <a href="https://github.com/jimin-park-01/travel-recommendation-system" target="_blank" rel="noopener noreferrer" class="button button--secondary button--sm" style="width: 100%;">GitHub →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section section--light">
+      <div class="section__container">
+        <div class="section-heading">
+          <h2 class="section-heading__title">Contact</h2>
+        </div>
+
+        <div class="contact">
+          <div class="contact__links">
+            <!-- Email -->
+            <a href="mailto:qwa8418@naver.com" class="contact__link">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              </svg>
+              <span>qwa8418@naver.com</span>
+            </a>
+
+            <div class="contact__separator"></div>
+
+            <!-- GitHub -->
+            <a href="https://github.com/jimin-park-01" target="_blank" rel="noopener noreferrer" class="contact__link">
+              <svg fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v 3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+              </svg>
+              <span>GitHub ↗</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__copyright">
+      © 2026 Park Jimin
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
