@@ -496,8 +496,8 @@ main {
   }
 
   .project-grid--supporting {
-    grid-template-columns: repeat(2, 1fr);
-    auto-rows: max-content;
+    grid-template-columns: repeat(3, 1fr);
+    auto-rows: 1fr;
   }
 }
 
@@ -524,7 +524,7 @@ main {
 
 .project-card--small {
   padding: 0.875rem;
-  height: 12rem;
+  height: 15rem;
 }
 
 @media (min-width: 768px) {
@@ -533,7 +533,7 @@ main {
   }
 
   .project-card--small {
-    height: 12rem;
+    height: 15rem;
   }
 }
 
